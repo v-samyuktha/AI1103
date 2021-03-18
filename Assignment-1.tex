@@ -152,32 +152,28 @@ Then $n(X=0)$ = 25 and $n(X=1)$ = 15\\
 The binomial distribution is defined using the PMF:
 
 \begin{align}
-p_X\left(n\right) 
+p\left(X\right) 
 = 
 \begin{cases}
-p & n = 1
+p & X = 1
 \\
-1-p & n = 0
+1-p & X = 0
 \\
 \text{otherwise}
 \end{cases}
 \end{align}
 \\
+\begin{align}
+p\left(X=1\right) &= \frac{n\left(X=1\right) }{n\left(X=0\right)+
+n\left(X=1\right)}\\
+p\left(X=1\right) &= \frac{15}{25 + 15}
+\end{align}
 \begin{equation}
-p=\frac{n\left(X=1\right) }{n\left(X=0\right)+
-n\left(X=1\right)}
-\end{equation} 
-
-\begin{equation}
-p = \frac{15}{25 + 15}
-\end{equation} 
-
-\begin{equation}
-\fbox{p = 0.375}
+\begin{aligned}
+p\left(X=1\right) &= 0.375  \\
+p\left(X=0\right) &= 1-p\left(X=1\right) = 0.625
+\end{aligned}
 \end{equation}
-\begin{equation}
-\fbox{1-p = 0.625}
-\end{equation} 
 \\
 Hence, the probability of picking a boy is 0.375 and a girl is 0.625 respectively.
 \end{document}
